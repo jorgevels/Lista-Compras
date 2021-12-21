@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+"outDir":"./dist",
+"target": "ES5",
+"module": "es6",
+"jsx": "react",
+"noImplicitAny": true,
+"allowSyntheticDefaultImports": true,
+"moduleResolution": "node",
+"baseUrl": "./",
+"paths": {
+  "@components": ["src/components/*"]
+}
+  }
+}
