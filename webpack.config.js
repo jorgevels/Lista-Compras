@@ -77,7 +77,10 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].bundle.js",
     chunkFilename: "[name].bundle.js",
-    /* publicPath: "/", */
+    publicPath: "/",
+  },
+  devServer: {
+    historyApiFallback: true,
   },
 
   // Este elemento resulve las extensiones que vamos a utilizar

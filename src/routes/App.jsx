@@ -6,7 +6,7 @@ import Layout from "@components/Layout";
 import PageLoading from "../components/PageLoading";
 
 /* import { hot } from "react-hot-loader/root"; */
-/* import ListPrice from "@components/ListPrice"; */
+/* import Price from "@containers/Price"; */
 
 /* const AsyncCheckoutContainer = React.lazy(() =>
   import("@components/ListPrice")
@@ -23,6 +23,7 @@ function App() {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/price" component={AsyncPriceContainer} />
+              {/*  <Route exact path="/price" component={Price} /> */}
             </Switch>
           </Layout>
         </BrowserRouter>
