@@ -1,4 +1,5 @@
 import { Workbox } from "workbox-window";
+import Swal from "sweetalert2";
 
 export default function registerServiceWorker() {
   if ("production" !== process.env.NODE_ENV) {
@@ -15,13 +16,22 @@ export default function registerServiceWorker() {
        * only on the updated
        */
       if (event.isUpdate) {
-        if (
+        /* if (
           confirm(
             `Hay una nueva actualización!. Haz clic en Aceptar para actualizar`
           )
         ) {
           window.location.reload();
-        }
+        } */
+        Swal.fire({
+          title: "Hay una nueva actualización!",
+          icon: "question",
+          iconHtml: "؟",
+          confirmButtonText: "Aceptar",
+          cancelButtonText: "Cancelar",
+          showCancelButton: true,
+          showCloseButton: true,
+        });
       }
     });
     wb.register();

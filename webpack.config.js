@@ -79,9 +79,9 @@ module.exports = {
     chunkFilename: "[name].bundle.js",
     publicPath: "/",
   },
-  devServer: {
+  /* devServer: {
     historyApiFallback: true,
-  },
+  }, */
 
   // Este elemento resulve las extensiones que vamos a utilizar
   resolve: {
