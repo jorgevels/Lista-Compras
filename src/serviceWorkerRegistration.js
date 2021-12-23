@@ -34,13 +34,11 @@ export default function registerServiceWorker() {
           showCloseButton: true,
         }); */
         Swal.fire({
-          title: "Actualizacion",
+          title: "Actualización",
           text: "Hay una nueva actualización!",
           icon: "warning",
-          showCancelButton: true,
           confirmButtonColor: "#3085d6",
-          cancelButtonColor: "#d33",
-          confirmButtonText: "Borrar",
+          confirmButtonText: "Aceptar",
           showClass: {
             popup: "animate__animated animate__fadeInDown",
           },
