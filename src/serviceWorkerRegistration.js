@@ -24,7 +24,7 @@ export default function registerServiceWorker() {
           window.location.reload();
         } */
 
-        Swal.fire({
+        /* Swal.fire({
           title: "Hay una nueva actualización!",
           icon: "question",
           iconHtml: "؟",
@@ -32,7 +32,15 @@ export default function registerServiceWorker() {
           cancelButtonText: "Cancelar",
           showCancelButton: true,
           showCloseButton: true,
-        });
+        }); */
+        Swal.fire(
+          "Hay una nueva actualización!",
+          "Haz clic en Ok para actualizar la App",
+          "question"
+        );
+        {
+          window.location.reload();
+        }
       }
     });
     wb.register();

@@ -37,7 +37,7 @@ const App = () => {
         </div> */}
         <Title>
           <Link to="/">
-            <p>Mercando2</p>
+            <p>Mercando5</p>
             {/*  <img className="Logo_header" src={Logo} alt="logo" /> */}
           </Link>
         </Title>
