@@ -33,12 +33,13 @@ export default function registerServiceWorker() {
           showCancelButton: true,
           showCloseButton: true,
         }); */
-        Swal.fire(
-          "Hay una nueva actualización!",
-          "Haz clic en Ok para actualizar la App",
-          "question"
-        );
-        {
+        if (
+          Swal.fire(
+            "Hay una nueva actualización!",
+            "Haz clic en Ok para actualizar la App",
+            "question"
+          )
+        ) {
           window.location.reload();
         }
       }
