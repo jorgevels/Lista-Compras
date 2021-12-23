@@ -33,15 +33,26 @@ export default function registerServiceWorker() {
           showCancelButton: true,
           showCloseButton: true,
         }); */
-        if (
-          Swal.fire(
-            "Hay una nueva actualización!",
-            "Haz clic en Ok para actualizar la App",
-            "question"
-          )
-        ) {
-          window.location.reload();
-        }
+        Swal.fire({
+          title: "Actualizacion",
+          text: "Hay una nueva actualización!",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Borrar",
+          showClass: {
+            popup: "animate__animated animate__fadeInDown",
+          },
+          hideClass: {
+            popup: "animate__animated animate__fadeOutUp",
+          },
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.reload();
+            Swal.fire("Actualizacion!", "App Actualizada.", "success");
+          }
+        });
       }
     });
     wb.register();
