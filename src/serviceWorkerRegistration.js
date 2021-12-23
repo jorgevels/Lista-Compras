@@ -23,6 +23,7 @@ export default function registerServiceWorker() {
         ) {
           window.location.reload();
         } */
+
         Swal.fire({
           title: "Hay una nueva actualización!",
           icon: "question",
