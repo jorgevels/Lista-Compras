@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "@containers/Home";
 import { DataProvider } from "@context/DataProvider";
 import Layout from "@components/Layout";
@@ -18,7 +18,8 @@ function App() {
   return (
     <Suspense fallback={<PageLoading />}>
       <DataProvider>
-        <BrowserRouter>
+        {/* <BrowserRouter> */}
+        <Router>
           <Layout>
             <Switch>
               <Route exact path="/" component={Home} />
@@ -26,7 +27,8 @@ function App() {
               {/*  <Route exact path="/price" component={Price} /> */}
             </Switch>
           </Layout>
-        </BrowserRouter>
+        </Router>
+        {/*  </BrowserRouter> */}
       </DataProvider>
     </Suspense>
   );
