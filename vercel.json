@@ -1,25 +1,17 @@
  {
-  "version": 2,
-  "name":"Mercar",
-  "builds": [
-    {
-      "use": "@vercel/static-build",
-      "src": "package.json"
-    }
-  ],
-  
-  "routes": [
-    {
-      "src": "(.*).css",
-      "dest": "/$1.css"
-    },
-    {
+    "version": 2,
+    "name": "Mercando",
+    "builds": [
+        { "use": "@vercel/static-build", "src": "package.json"}
+    ],
+    "routes": [
+        {
       "src": "(.*).css",
       "dest": "/$1.css"
     },
     {
       "src": "(.*).js",
-      "dest": "/$1.js"
+      "dest": "/$2.js"
     },
     {
       "src": "(.*).png",
@@ -37,10 +29,9 @@
       "src": "(.*).json",
       "dest": "/$1.json"
     },
-    {
-      "src": "/.*",
-      "dest": "/index.html"
-    }
-  ]
-}
-
+        {
+            "src": "/.*",
+            "dest": "index.html"
+        }
+    ]
+} 
