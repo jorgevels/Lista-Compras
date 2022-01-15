@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "@containers/Home";
+/* import Home from "@containers/Home"; */
+import Home from "../containers/Home";
 import { DataProvider } from "@context/DataProvider";
 import Layout from "@components/Layout";
 import PageLoading from "../components/PageLoading";
@@ -12,7 +13,9 @@ import PageLoading from "../components/PageLoading";
   import("@components/ListPrice")
 ); */
 
-const AsyncPriceContainer = React.lazy(() => import("@containers/Price"));
+/* const AsyncPriceContainer = React.lazy(() => import("@containers/Price")); */
+
+const AsyncPriceContainer = React.lazy(() => import("../containers/Price"));
 
 function App() {
   return (
