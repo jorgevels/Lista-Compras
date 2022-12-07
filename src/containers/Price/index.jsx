@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 const SIZE = "40px";
 const COLOR = "#fd3e81";
 
-const API = "https://listacompras-ts.herokuapp.com/api/v1";
+const API = "https://backend-lista-compras-production.up.railway.app/api/v1";
 
 const Price = () => {
   const initialState = useInitialState(API);
