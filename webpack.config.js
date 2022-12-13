@@ -72,13 +72,13 @@ module.exports = {
     home: "./src/index.js",
     /*  header: "./src/Header/index.js", */
   },
-
   output: {
-    /* publicPath: "/", */
+    /*  publicPath: "/", */
+    publicPath: "auto",
     path: path.resolve(__dirname, "dist"),
     filename: "[name].bundle.js",
     chunkFilename: "[name].bundle.js",
-    publicPath: "#",
+    /*  publicPath: "#", */
     /* historyApiFallback: true, */
   },
   devServer: {
