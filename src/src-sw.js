@@ -64,7 +64,7 @@ registerRoute(
  */
 registerRoute(
   ({ url }) =>
-    url.origin === "https://listacompras-ts.herokuapp.com" &&
+    url.origin === "https://backend-lista-compras-production.up.railway.app" &&
     url.pathname.startsWith("/api/v1"),
   new StaleWhileRevalidate({
     cacheName: "movie-api-response",

@@ -27,7 +27,7 @@ function App() {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/price" component={AsyncPriceContainer} />
-              {/* <Route exact path="/price" component={Price} /> */}
+              {/*     <Route exact path="/price" component={Price} /> */}
             </Switch>
           </Layout>
         </Router>
