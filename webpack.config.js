@@ -79,11 +79,12 @@ module.exports = {
     filename: "[name].bundle.js",
     chunkFilename: "[name].bundle.js",
     /*  publicPath: "#", */
-    /* historyApiFallback: true, */
+    /*  historyApiFallback: true, */
   },
+  /* ,
   devServer: {
     historyApiFallback: true,
-  },
+  }, */
 
   // Este elemento resulve las extensiones que vamos a utilizar
   resolve: {
