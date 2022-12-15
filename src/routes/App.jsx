@@ -5,6 +5,7 @@ import Home from "@containers/Home";
 import { DataProvider } from "@context/DataProvider";
 import Layout from "@components/Layout";
 import PageLoading from "../components/PageLoading";
+import NotFound from "../components/NotFound";
 
 /* import { hot } from "react-hot-loader/root"; */
 /* import Price from "../containers/Price"; */
@@ -28,6 +29,7 @@ function App() {
               <Route exact path="/" component={Home} />
               <Route exact path="/price" component={AsyncPriceContainer} />
               {/*     <Route exact path="/price" component={Price} /> */}
+              <Route component={NotFound} />
             </Switch>
           </Layout>
         </Router>
