@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   align-items: center;
-  background: #252627;
+  background: #0f1840;
   bottom: 0;
   display: grid;
   grid-template-columns: 1fr minmax(160px, 1fr) minmax(40px, 1fr);

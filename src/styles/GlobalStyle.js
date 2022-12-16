@@ -10,6 +10,8 @@ export const colors = {
   danger: "#ff463b",
   yellow: "#fcc000",
   white: "#fff",
+  meta: "#0f1840",
+  pink: "#FF2D55",
 };
 
 export const size = {

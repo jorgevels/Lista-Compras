@@ -21,8 +21,8 @@ const Button = styled.button`
   width: 6rem;
   margin: 0 2px;
   padding: 0.2rem 0;
-  border-radius: 25px;
-  background: ${colors.danger};
+  border-radius: 5px;
+  background: ${colors.pink};
   color: #fff;
   border-color: transparent;
   cursor: pointer;
