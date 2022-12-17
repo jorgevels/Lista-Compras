@@ -7,16 +7,9 @@ import Layout from "@components/Layout";
 import PageLoading from "../components/PageLoading";
 import NotFound from "../components/NotFound";
 
-/* import { hot } from "react-hot-loader/root"; */
 import Price from "@containers/Price";
 
-/* const AsyncCheckoutContainer = React.lazy(() =>
-  import("@components/ListPrice")
-); */
-
 /* const AsyncPriceContainer = React.lazy(() => import("@containers/Price")); */
-
-/* const AsyncPriceContainer = React.lazy(() => import("../containers/Price")); */
 
 function App() {
   return (
@@ -26,8 +19,8 @@ function App() {
           <Layout>
             <Switch>
               <Route exact path="/" component={Home} />
-              {/* <Route exact path="/price" component={AsyncPriceContainer} /> */}
-              <Route exact path="/price" component={Price} />
+              {/*  <Route exact path="/pricee" component={AsyncPriceContainer} /> */}
+              <Route exact path="*price" component={Price} />
               <Route component={NotFound} />
             </Switch>
           </Layout>

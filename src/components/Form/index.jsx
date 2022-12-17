@@ -79,7 +79,7 @@ export default function FormInput() {
         </div>
 
         <div className="item">
-          <Link to="/price">
+          <Link to="*price">
             <BsCardList size={SIZE} color={COLOR} />
           </Link>
         </div>
