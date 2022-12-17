@@ -1,5 +1,10 @@
 import React, { Suspense } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  HashRouter,
+} from "react-router-dom";
 import Home from "@containers/Home";
 /* import Home from "../containers/Home"; */
 import { DataProvider } from "@context/DataProvider";
@@ -15,16 +20,18 @@ function App() {
   return (
     <Suspense fallback={<PageLoading />}>
       <DataProvider>
-        <Router>
+        <HashRouter>
+          {/*  <Router> */}
           <Layout>
             <Switch>
               <Route exact path="/" component={Home} />
               {/*  <Route exact path="/pricee" component={AsyncPriceContainer} /> */}
-              <Route exact path="*price" component={Price} />
+              <Route exact path="/price" component={Price} />
               <Route component={NotFound} />
             </Switch>
           </Layout>
-        </Router>
+          {/*  </Router> */}
+        </HashRouter>
       </DataProvider>
     </Suspense>
   );

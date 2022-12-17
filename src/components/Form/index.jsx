@@ -1,5 +1,5 @@
 import React, { useState, useContext, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { HashRouter, Link } from "react-router-dom";
 import { DataContext } from "@context/DataProvider";
 import {
   Select,
@@ -79,7 +79,10 @@ export default function FormInput() {
         </div>
 
         <div className="item">
-          <Link to="*price">
+          {/* <HashRouter>
+            
+          </HashRouter> */}
+          <Link to="/price">
             <BsCardList size={SIZE} color={COLOR} />
           </Link>
         </div>
