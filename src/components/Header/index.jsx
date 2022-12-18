@@ -45,7 +45,7 @@ const App = () => {
         <div className="header-container-promo ">
           <div className="header-anuncio-promo">
             <Link to="/price">
-              <p>Promocionesx</p>
+              <p>Promociones</p>
             </Link>
           </div>
 

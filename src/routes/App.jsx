@@ -12,9 +12,9 @@ import Layout from "@components/Layout";
 import PageLoading from "../components/PageLoading";
 import NotFound from "../components/NotFound";
 
-import Price from "@containers/Price";
+/* import Price from "@containers/Price"; */
 
-/* const AsyncPriceContainer = React.lazy(() => import("@containers/Price")); */
+const AsyncPriceContainer = React.lazy(() => import("@containers/Price"));
 
 function App() {
   return (
@@ -25,8 +25,8 @@ function App() {
           <Layout>
             <Switch>
               <Route exact path="/" component={Home} />
-              {/*  <Route exact path="/pricee" component={AsyncPriceContainer} /> */}
-              <Route exact path="/price" component={Price} />
+              <Route exact path="/price" component={AsyncPriceContainer} />
+              {/*  <Route exact path="/price" component={Price} /> */}
               <Route component={NotFound} />
             </Switch>
           </Layout>
