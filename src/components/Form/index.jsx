@@ -9,12 +9,13 @@ import {
   Button,
   Button_list,
 } from "./styles";
+import { above, colors } from "@styles/GlobalStyle";
 import { MdAddBox, MdEdit, MdAlarmOn, MdListAlt } from "react-icons/md";
 import { BsCardList } from "react-icons/bs";
 /* import ListArticulos from "../ListArticulos"; */
 
 const SIZE = "30px";
-const COLOR = "#fd3e81";
+const COLOR = "#FF2D55";
 
 export default function FormInput() {
   const [list, setList] = useContext(DataContext);
@@ -108,7 +109,7 @@ export default function FormInput() {
             ref={todoInput}
             placeholder="Ingresa un articulo"
             value={articuloName}
-            onChange={(e) => setArticuloName(e.target.value.toLowerCase())}
+            onChange={(e) => setArticuloName(e.target.value)}
           />
 
           <Select

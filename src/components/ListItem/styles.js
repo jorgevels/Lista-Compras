@@ -14,8 +14,8 @@ const Input = styled.input`
   text-align: left;
   align-content: center;
   line-height: 2.3;
-  background: orange;
-  color: red;
+  background: #8e3ae0;
+  color: white;
   ${"" /* border: 0px solid transparent; */}
   border: 1px solid #ebebeb;
   border-radius: 4px;

@@ -75,8 +75,12 @@ const Header_icons = styled.div`
 const Title = styled.h3`
   p {
     font-size: 25px;
+
     font-family: "Shadows Into Light", cursive;
     color: ${colors.obscure};
+  }
+  a {
+    text-decoration: none;
   }
 `;
 

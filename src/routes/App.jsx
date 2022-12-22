@@ -6,7 +6,6 @@ import {
   HashRouter,
 } from "react-router-dom";
 import Home from "@containers/Home";
-/* import Home from "../containers/Home"; */
 import { DataProvider } from "@context/DataProvider";
 import Layout from "@components/Layout";
 import PageLoading from "../components/PageLoading";
@@ -21,16 +20,13 @@ function App() {
     <Suspense fallback={<PageLoading />}>
       <DataProvider>
         <HashRouter>
-          {/*  <Router> */}
           <Layout>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/price" component={AsyncPriceContainer} />
-              {/*  <Route exact path="/price" component={Price} /> */}
               <Route component={NotFound} />
             </Switch>
           </Layout>
-          {/*  </Router> */}
         </HashRouter>
       </DataProvider>
     </Suspense>

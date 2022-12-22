@@ -4,7 +4,7 @@ import { List, InputCheckBox, Input, Button } from "./styles";
 import "@styles/index.css";
 
 const SIZE = "25px";
-const COLOR = "orange";
+const COLOR = "#8e3ae0";
 
 export default function ListItem({
   todo,
@@ -57,7 +57,9 @@ export default function ListItem({
           id="editValue"
           value={editValueArticulo}
           name="editValue"
-          onChange={(e) => setEditValueArticulo(e.target.value.toLowerCase())}
+          onChange={(e) =>
+            setEditValueArticulo(e.target.value.toLocaleUpperCase())
+          }
         />
         <Input
           type="text"

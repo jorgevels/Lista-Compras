@@ -36,6 +36,7 @@ export default function registerServiceWorker() {
         Swal.fire({
           title: "Actualización",
           text: "Hay una nueva actualización!",
+          text: "Hemos mejorado algunas cosas ",
           icon: "warning",
           confirmButtonColor: "#3085d6",
           confirmButtonText: "Aceptar",

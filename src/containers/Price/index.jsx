@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 /* const API = "http://localhost:3006/api/v1"; */
 
 const SIZE = "40px";
-const COLOR = "#fd3e81";
+const COLOR = "#FF2D55";
 
 const API = "https://backend-lista-compras-production.up.railway.app/api/v1";
 

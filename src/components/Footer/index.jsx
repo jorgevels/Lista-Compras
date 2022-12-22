@@ -4,14 +4,14 @@ import Information from "../Information";
 import { MdInfoOutline, MdInfo } from "react-icons/md";
 
 const SIZE = "32px";
-const COLOR = "#fd3e81";
+const COLOR = "#FF2D55";
 
 const Footer = () => {
   return (
     <>
       <Nav>
         <Info></Info>
-        <h3>Hecho con 💛 © 2021</h3>
+        <h3>Hecho con 💛 © 2022</h3>
 
         <Container>
           <div>
