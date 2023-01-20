@@ -45,7 +45,7 @@ const Input = styled.input`
   `}
   ${above.mediumL`
   font-size:13px;
-  color:blue;
+  color:#FF2D55;
   `}
 `;
 

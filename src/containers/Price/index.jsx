@@ -13,10 +13,28 @@ import { Link } from "react-router-dom";
 const SIZE = "40px";
 const COLOR = "#FF2D55";
 
-const API = "https://backend-lista-compras-production.up.railway.app/api/v1";
+const API =
+  "https://backend-lista-compras-production-3365.up.railway.app/api/v1";
 
 const Price = () => {
-  const initialState = useInitialState(API);
+  const initialState = useInitialState(API, {
+    allowedHeaders: [
+      "Origin",
+      "X-Requested-With",
+      "Content-Type",
+      "Accept",
+      "X-Access-Token",
+    ],
+    methods: "GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE",
+    mode: "no-cors",
+    origin:
+      "https://backend-lista-compras-production-3365.up.railway.app/api/v1",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    preflightContinue: !1,
+    body: JSON.stringify(),
+  });
 
   console.log(initialState);
   return initialState.length === 0 ? (

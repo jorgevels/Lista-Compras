@@ -1,7 +1,7 @@
 import React from "react";
 import { Nav, Container, Info } from "./styles";
 import Information from "../Information";
-import { MdInfoOutline, MdInfo } from "react-icons/md";
+import { MdInfo } from "react-icons/md";
 
 const SIZE = "32px";
 const COLOR = "#FF2D55";

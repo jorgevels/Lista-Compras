@@ -35,8 +35,7 @@ export default function registerServiceWorker() {
         }); */
         Swal.fire({
           title: "Actualización",
-          text: "Hay una nueva actualización!",
-          text: "Hemos mejorado algunas cosas ",
+          text: "Hemos mejorado algunas cosas para ti ",
           icon: "warning",
           confirmButtonColor: "#3085d6",
           confirmButtonText: "Aceptar",
