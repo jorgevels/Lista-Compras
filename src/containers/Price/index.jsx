@@ -6,8 +6,6 @@ import { Container_lista, Title_lista } from "./styles";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-/* const API = "https://us-central1-gndx-fake-api.cloudfunctions.net/api"; */
-
 /* const API = "http://localhost:3006/api/v1"; */
 
 const SIZE = "40px";
