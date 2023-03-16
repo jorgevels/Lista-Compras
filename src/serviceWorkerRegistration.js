@@ -35,9 +35,11 @@ export default function registerServiceWorker() {
         }); */
         Swal.fire({
           title: "Actualización",
+          description: "Hemos mejorado algunas cosas para ti ",
           icon: "warning",
           confirmButtonColor: "#3085d6",
           confirmButtonText: "Aceptar",
+          footer: '<a href="">Tenemos nuevas promosiones?</a>',
           showClass: {
             popup: "animate__animated animate__fadeInDown",
           },
